@@ -1,0 +1,85 @@
+----------------------------------------6---------------------------------------
+[6]Differwnce between linkedlist   and    Arraylist 
+        ArrayList                                                      LinkedList
+*Internally it stores in a array form                         *internally it stores in a circular node Form
+*it easy to read and create operation                         *it is not easy in create and read operation
+*it is not easy to manupilate                                 *it is easy to manupilate
+*it requries less memory                                      *it requries more memory
+*it is maily used for create and read operation               *it maily used for manupilation
+------------------------------------------1------------------------------------------
+[1]import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.stream.Collectors;
+
+public class MaxMinRunner {
+
+	public static void main(String[] args) {
+		
+		Collection<Integer> col=new ArrayList<Integer>();
+		
+		
+		col.add(45);
+		col.add(333);
+		col.add(76);
+		col.add(29);
+		col.add(900);
+		col.add(23);
+		col.add(474);
+		col.add(654);
+		col.add(29);
+		col.add(454);
+		System.out.println(col);
+		
+		System.out.println("max- "+Collections.max(col));
+		System.out.println("min- "+Collections.min(col));
+	}
+}
+---------------------------------------------7------------------------------------------
+  [7]     ListIterator                                                          Iterator
+*can do remove operation only on elements                       *can remove add and replace elements
+*methods in this are remove()                                   *methods in this are remove(),add()and replace()
+*
+ 
+------------------------------------9---------------------------------------------
+ [9]The memory leak is a situation when the garbage collector does not recognize the unused 
+objects and they remain in the memory indefinitely that reduces the amount of memory allocated to
+ the application. Because the unused objects still being referenced that may lead to OutOfMemoryError.
+ -------------------------------------------------3---------------------------------------------------------
+ [3]GENERALIZATION CLASS========Converting a child type into a parent type is called 'Generalization' because we are making the subclass
+ to become more general and its scope is widening. This is also called widening or up casting
+ 
+ SPELIALIZED CLASS======Converting parent type to child type is called SPELIALIZED class
+ ----------------------------------------------------------10--------------------------------------------------------------------------
+ [10]static polymorphism- It is type of polymorphism that collects information to call the method during compile time is 
+ called static polymorphism
+ Dynamic polymorphism- It is type of polymorphism that collects information to call the method during run time is 
+ called Dynamic polymorphism
+ 
+-------------------------------------------------------------11----------------------------------------------------------------------- 
+[11]By using Encapusulation she can achive to give a security  for the properties
+Encapusulation-means hiding direct acess to properties and acess is done through methods.
+in encapusulation we make properties as private and we can acess the properties through getmethod and set method
+
+
+eg===private String name;
+    public void setName(String name) {
+		this.name = name;
+	}
+     public String getName() {
+		return name;
+	}
+----------------------------------------------------------8-------------------------------------------------
+[8]Covarient method overriding helps to remove type casting on client side by allowing you to return a sub type 
+of actually return typeof overridden method
+
+--------------------------------------------------------5----------------------------------------------------
+[5] 
+there are comparable and comparater has used to sorted collection
+----------------------------------------------------------4----------------------------------------------------------
+[4]
+[A]  we can make the class as final 
+[B]   String class and math class
+[c]Delegation can be an alternative to inheritance. Delegation means that you use an object of another class as an 
+instance variable,and forward messages to the instance.
