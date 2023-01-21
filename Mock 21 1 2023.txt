@@ -1,0 +1,125 @@
+1)                         iterable(I)
+
+                           collection(I)
+						 
+	*List (I)                   * Set (I)                     *Queue(I)
+	LinkedList              linkedSet                       Dequeu
+	ArrayList               LinkedHashSet
+	                             *SortedSet(I)
+                                    TreeSet
+Collection is a framework which is used to store and manipulation of object.
+
+List                         Set
+*It is ordered             *It is unordered
+*It is indexBase            *It is nonIndexBase
+*It allows duplicates       *It doesn't allow duplicates
+*It can acess by position   *it cann't acess by position
+
+Arraylist                                 linkedList
+*initaially it is a array base         *It initially in the form of nodes
+*creat and read operation is faster    *creat and read operation is slower
+*manupilation is slower                *manipulation is faster
+*mainly used for creat and read        *mainly used for manupilation
+operation
+
+2) Map is a collection Framework in java.
+Map is used to manupulate the key and pair value.
+
+                           Map(I)
+						             SortedMap(I)
+				  HashMap                   TreeMap
+				  LinkedHashmap
+				 
+HashMap                                                  LinkedHashmap
+*HashMap doesn't maintain the ordered               *It stores the values in the key-pair combination
+of keys and values				                    
+*  It can not have duplicate keys                   *It can not have duplicate elements
+ *It is non-synchronized.                           *It is non synchronized
+ 
+ 
+ 3)Hashset                                                     TreeSet
+ *In HashSet, only an element can be null.                *It does not allow null elements.
+ *It uses hashCode() or equals() method for comparison   *It uses compare() or compareTo() method for comparison.
+ *Internally it uses HashMap to store its elements        *Internally it uses TreeMap to store its elements
+ 
+ 4)hash map implemets  of hashcode() is native  because there is not any direct method in java to an 
+ referance of object
+ 
+ 6) String S="Shubam";
+    InStream char=s.chars();
+	
+7)SplitIterator is a Interface it transfer elements of sorce.
+
+8)String operation wit stream
+*startswith
+*endswith
+*equals
+*contains
+*isuppercase
+*islowercase
+9)Spring core  is the core of the framework that power features such as 
+Inversion of Control and dependency injection
+
+10)Dependency Injection is a fundamental aspect of the Spring framework, 
+through which the Spring container
+ “injects” objects into other objects or “dependencies”
+
+ 
+ 13) *StringBuilder in Java is a class used to create a mutable
+ or in other words, a modifiable succession of characters
+ *The StringBuffer class is used to create mutable string. 
+ It is same as String class except it is mutable and thread-safe
+ 
+ 20)public class Program{
+  public static void main(String[] args) {
+ 
+     LinkedList<String> list = new LinkedList<String>();
+   
+          list.add("Red");
+          list.add("Green");
+          list.add("Black");
+          list.add("Pink");
+          list.add("orange");
+      
+
+   System.out.println("The Original linked list: " + llist);
+
+  
+    Object firstElement = list.removeFirst();
+    System.out.println("Element removed: "+ firstElement);
+
+    Object lastElement = list.removeLast();
+    System.out.println("Element removed: "+ lastElement);
+    System.out.println("The New linked list: " + list);
+  }
+}
+
+16)public class Country {
+	public static void main(String[] args) {
+		Map<String, Integer> map=new TreeMap<String, Integer>();
+		map.put("India", 91);
+		map.put("UK", 32);
+		map.put("USA", 13);
+		map.put("UAE", 42);
+		map.put("China", 52);
+		
+		Set<Entry<String, Integer>> entry= map.entrySet();
+		entry.forEach(ele->System.out.println(ele));
+		
+		map.forEach((key,value)->{if(value==52) {System.out.println(key);}});
+			
+		Iterator<Entry<String, Integer>> itr=entry.iterator();
+		while(itr.hasNext()) {
+			Entry<String, Integer> ent= itr.next();
+			if(ent.getValue()==42) {
+				itr.remove();
+				for (Entry<String, Integer> entry2 : entry) {
+					System.out.println(entry2);
+				}
+			}
+		}
+		}
+}
+
+17)-  Maveen------------Maven is chiefly used for Java-based projects, 
+        helping to download dependencies, which refers to the libraries or JAR files
